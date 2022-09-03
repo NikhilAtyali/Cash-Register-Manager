@@ -10,22 +10,23 @@
 <body>
 
     <div class="container">
-        <div class="creater"></div>
+        <div class="creater">Nikhil Atyali</div>
             <h1 class="heading">Cash Register Manager</h1>
             <p class="description">Enter the bill amount and the cash given by customer and know the minimum number of notes to be returned </p>
             <section>
-                <label for="billAmount">Bill Amount:</label>
+                <label class="label" for="billAmount">Bill Amount:</label>
                 <input type="text" class="billAmount"  type="number">
+                <button class="buttonNext" id="nextBtn">Next</button>
             </section>
             <section class="cashGivenSection">
-                <label for="cashGiven">Cash Given:</label>
+                <label class="label" for="cashGiven">Cash Given:</label>
                 <input type="number" class="cashGiven">
                 <button class="checkButton">Check</button>
             </section>
 
-            <p class="errorMsg" id="error-message"></p>
+            <p class="errorMsg" id="errorMessage"></p>
 
-            <section class="notesSection">
+            <section class="notesSection" id="output">
                 <table class="changeTable">
                     <caption class="return">Return Change:</caption>
                         <tr>
